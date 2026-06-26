@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include 'partials/global-styles.html' %}
+
+    <title>Landingpage</title>
+  </head>
+  <body>
+    {% render 'components/button/button', text: 'Test' %}
+
+    {% render 'components/button/button', text: 'Test', variant: 'Secondary' %}
+
+    {% include 'partials/theme-settings.liquid' %}
+  </body>
+</html>

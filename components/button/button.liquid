@@ -1,0 +1,24 @@
+{% doc %}
+  Button
+
+  @param {string} [text] - Button text
+  @param {string} [variant] - Button variant ('Primary', 'Secondary'). Default: "Primary"
+  @param {string} [action] - The action attribute
+{% enddoc %}
+
+{% assign variant = variant | default: 'Primary' %}
+
+<button
+  class="
+    Button
+    Button--{{ variant }}
+  "
+
+  {% if action %}
+    data-action="{{ action }}"
+  {% endif %}
+>
+  {% if text %}
+    {{ text }}
+  {% endif %}
+</button>

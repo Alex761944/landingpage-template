@@ -1,0 +1,34 @@
+<div class="ThemeSettings">
+  <input type="color" data-property="--button-primary-background">
+
+  <input type="color" data-property="--button-secondary-background">
+</div>
+
+<style>
+  .ThemeSettings {
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: red;
+  }
+</style>
+
+<script>
+  const inputElements = document.querySelectorAll('.ThemeSettings input');
+
+  inputElements.forEach((inputElement) => {
+    const property = inputElement.dataset.property;
+
+    const initialValue = document.documentElement.style.getPropertyValue(property);
+
+    inputElement.value = initialValue;
+
+    inputElement.addEventListener('input', () => {
+      const newValue = inputElement.value;
+
+      document.documentElement.style.setProperty(property, newValue);
+    });
+  });
+</script>

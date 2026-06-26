@@ -1,0 +1,28 @@
+:root {
+  --border-radius: 8px;
+
+  --text-color-primary: rgb(22, 22, 22);
+  --text-color-primary-inverted: rgb(242, 232, 207);
+
+  --background-primary: rgb(242, 232, 207);
+  --background-secondary: rgb(22, 22, 22);
+
+  --border: rgb(22, 22, 22);
+  --border-inverted: rgb(242, 232, 207);
+
+  --destructive: rgb(255, 0, 0);
+  --success: rgb(0, 128, 0);
+  --warning: rgb(255, 165, 0);
+
+  --button-primary-text: rgb(242, 232, 207);
+  --button-primary-text-hover: rgb(255, 255, 255);
+  --button-primary-background: rgb(56, 102, 65);
+  --button-primary-background-hover: rgb(106, 153, 78);
+  --button-secondary-text: rgb(56, 102, 65);
+  --button-secondary-text-hover: rgb(106, 153, 78);
+  --button-secondary-background: rgb(242, 232, 207);
+  --button-secondary-background-hover: rgb(255, 255, 255);
+
+  --link-color: rgb(106, 153, 78);
+  --link-color-hover: rgb(167, 201, 87);
+}
