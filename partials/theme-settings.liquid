@@ -1,7 +1,43 @@
 <div class="ThemeSettings">
-  <input type="color" data-property="--button-primary-background">
+  <label>
+    Primary Button Background
+    <input type="color" data-property="--button-primary-background">
+  </label>
 
-  <input type="color" data-property="--button-secondary-background">
+  <label>
+    Primary Button Background Hover
+    <input type="color" data-property="--button-primary-background-hover">
+  </label>
+
+  <label>
+    Sedcondary Button Background
+    <input type="color" data-property="--button-secondary-background">
+  </label>
+
+  <label>
+    Secondary Button Background Hover
+    <input type="color" data-property="--button-secondary-background-hover">
+  </label>
+
+  <label>
+    Button Primary Text
+    <input type="color" data-property="--button-primary-text">
+  </label>
+
+  <label>
+    Button Primary Text Hover
+    <input type="color" data-property="--button-primary-text-hover">
+  </label>
+
+  <label>
+    Button Secondary Text
+    <input type="color" data-property="--button-secondary-text">
+  </label>
+
+  <label>
+    Button Secondary Text Hover
+    <input type="color" data-property="--button-secondary-text-hover">
+  </label>
 </div>
 
 <style>
@@ -11,19 +47,31 @@
     bottom: 0;
     left: 0;
 
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
     background-color: red;
   }
 </style>
 
 <script>
+  function rgbToHex(rgb) {
+    const values = rgb.match(/\d+/g);
+
+    if (!values) return rgb;
+
+    return '#' + values.map((value) => Number(value).toString(16).padStart(2, '0')).join('');
+  }
+
   const inputElements = document.querySelectorAll('.ThemeSettings input');
 
   inputElements.forEach((inputElement) => {
     const property = inputElement.dataset.property;
 
-    const initialValue = document.documentElement.style.getPropertyValue(property);
+    const initialValue = getComputedStyle(document.documentElement).getPropertyValue(property).trim();
 
-    inputElement.value = initialValue;
+    inputElement.value = rgbToHex(initialValue);
 
     inputElement.addEventListener('input', () => {
       const newValue = inputElement.value;
