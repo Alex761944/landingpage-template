@@ -1,41 +1,41 @@
 <div class="ThemeSettings">
   <label>
-    Primary Button Background
+    {% render 'components/text/text', text: 'Primary Button Background:' %}
     <input type="color" data-property="--button-primary-background">
   </label>
 
   <label>
-    Primary Button Background Hover
+    {% render 'components/text/text', text: 'Primary Button Background Hover:' %}
     <input type="color" data-property="--button-primary-background-hover">
   </label>
 
   <label>
-    Sedcondary Button Background
+    {% render 'components/text/text', text: 'Sedcondary Button Background:' %}
     <input type="color" data-property="--button-secondary-background">
   </label>
 
   <label>
-    Secondary Button Background Hover
+    {% render 'components/text/text', text: 'Secondary Button Background Hover:' %}
     <input type="color" data-property="--button-secondary-background-hover">
   </label>
 
   <label>
-    Button Primary Text
+    {% render 'components/text/text', text: 'Button Primary Text:' %}
     <input type="color" data-property="--button-primary-text">
   </label>
 
   <label>
-    Button Primary Text Hover
+    {% render 'components/text/text', text: 'Button Primary Text Hover:' %}
     <input type="color" data-property="--button-primary-text-hover">
   </label>
 
   <label>
-    Button Secondary Text
+    {% render 'components/text/text', text: 'Button Secondary Text:' %}
     <input type="color" data-property="--button-secondary-text">
   </label>
 
   <label>
-    Button Secondary Text Hover
+    {% render 'components/text/text', text: 'Button Secondary Text Hover:' %}
     <input type="color" data-property="--button-secondary-text-hover">
   </label>
 </div>
@@ -48,7 +48,6 @@
     left: 0;
 
     display: flex;
-    flex-direction: column;
     gap: 4px;
 
     background-color: red;
