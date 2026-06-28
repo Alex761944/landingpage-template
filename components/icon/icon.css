@@ -1,0 +1,21 @@
+.Icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.Icon:hover {
+  opacity: 0.8;
+}
+
+.Icon--Destructive {
+  color: var(--icon-destructive);
+}
+
+.Icon--Success {
+  color: var(--icon-success);
+}
+
+.Icon--Warning {
+  color: var(--icon-warning);
+}
