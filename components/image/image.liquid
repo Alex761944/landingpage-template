@@ -1,0 +1,13 @@
+{% doc %}
+  Image
+
+  @param {string} image - URL of the image
+  @param {string} [variant] - Image variant (Portrait, Landscape, Square). Default: "Landscape"
+  @param {string} alt - Alt attribute for the image
+{% enddoc %}
+
+{% assign variant = variant | default: 'Landscape' %}
+
+<div class="Image Image--{{ variant }}">
+  <img class="Image__Inner" src="{{ image }}" alt="{{ alt }}">
+</div>

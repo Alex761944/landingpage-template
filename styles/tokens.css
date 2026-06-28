@@ -7,8 +7,18 @@
   --background-primary: rgb(242, 232, 207);
   --background-secondary: rgb(22, 22, 22);
 
-  --border: rgb(22, 22, 22);
-  --border-inverted: rgb(242, 232, 207);
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 12px;
+  --space-l: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: rgb(22, 22, 22);
+  --border-color-inverted: rgb(242, 232, 207);
 
   --destructive: rgb(255, 0, 0);
   --success: rgb(0, 128, 0);

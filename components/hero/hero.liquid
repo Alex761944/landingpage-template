@@ -1,0 +1,14 @@
+<div class="Hero">
+  <div class="Hero__Content">
+    {% render 'components/text/text', text: 'Dietrich Lederwaren', as: 'h2', variant: 'HeadingMedium' %}
+
+    {% render 'components/text/text',
+      text: 'Ihr Fachgeschäft für Reisegepäck | Damentaschen | Schul-/ Freizeitrucksäcke | Geldbörsen'
+    %}
+
+    {% render 'components/button/button', text: 'Kontakt aufnehmen' %}
+  </div>
+  <div class="Hero__Media">
+    {% render 'components/image/image', image: '/images/dietrich_lederwaren.png', alt: 'Koffer' %}
+  </div>
+</div>

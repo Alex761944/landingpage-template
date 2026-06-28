@@ -8,7 +8,23 @@
     <title>Landingpage</title>
   </head>
   <body>
-    {% render 'components/accordion-item/accordion-item', label: 'What is accordion?', text: 'Accordion is great!' %}
+    {% capture content %}
+      {% render 'components/hero/hero' %}
+    {% endcapture %}
+
+    {% render 'components/section/section', content: content %}
+
+    <ul class="u-NoList Accordion">
+      {% render 'components/accordion-item/accordion-item',
+        label: 'What is accordion?',
+        content: 'Accordion is great!'
+      %}
+
+      {% render 'components/accordion-item/accordion-item',
+        label: 'What is accordion?',
+        content: 'Accordion is great!'
+      %}
+    </ul>
 
     {% render 'components/link/link', text: 'Link', url: '#' %}
 

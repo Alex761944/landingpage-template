@@ -6,10 +6,11 @@
 }
 
 .Accordion li {
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   width: 100%;
   padding: 8px;
   border-radius: var(--border-radius);
+  border: var(--border-width) var(--border-style) var(--border-color);
 }
 
 .Accordion li label {
